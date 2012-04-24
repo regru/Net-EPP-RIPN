@@ -1,0 +1,47 @@
+Revision history for Net-EPP-RIPN
+
+0.001   Date/time
+        - First version, released on an unsuspecting world.
+
+0.002   Date/time
+        - Almost all functionality is ready
+
+0.003   2010-10-08 19:04
+        - Added checking of multiple objects (domains, contacts, hosts)
+
+0.004   2010-11-01 20:34
+        - Fixed organization contact creation, added test
+        - Docs fixes
+        - Fixed check_hosts() method
+        - Check for successfull authentication moved to login()
+        - Added XML::LibXML to Net::EPP::RIPN::Client use list
+        - Session ID is now stored in the object
+
+0.005   2010-11-06 17:17
+        - Removed version from default UserAgent string
+        - Added local_address parameter
+
+0.006   2010-11-06 17:46
+        - Fixed typo in the previous release
+
+0.007   2010-11-08 16:33
+        - Allow authenticated flag to be passed
+
+0.008   2010-12-23 12:04
+        - Fixed bug with IP addresses for host objects
+
+0.009   2010-12-23 12:16
+        - Fixed bug with removal of host object's IP addresses
+
+0.010   2011-03-18 14:09
+        - Added check for existence of trnData element
+
+0.011   2011-03-31 21:03
+        - Added 'undisclose' element to hash for contacts with active
+        "Private Person" flag
+
+0.012   2011-10-11 12:53
+        - Crazy bugfix: contact:update always set 'verified' state
+
+0.013   2011-10-27 14:52
+        - Error messages now always contain reason, if it is defined
