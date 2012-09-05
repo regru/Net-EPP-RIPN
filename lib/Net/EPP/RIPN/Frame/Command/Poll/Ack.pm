@@ -30,7 +30,7 @@ sub new {
 
 =head1 METHODS
 
-	$frame->setMsgID($id);
+        $frame->setMsgID($id);
 
 This method sets the C<msgID> attribute on the C<E<lt>pollE<gt>> element that
 is used to specify the message ID being acknowleged.

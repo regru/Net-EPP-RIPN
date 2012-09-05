@@ -54,32 +54,32 @@ sub _addExtraElements {
 
 =head1 METHODS
 
-	my $node = $frame->response;
+        my $node = $frame->response;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>commandE<gt>> element.
 
-	my $node = $frame->result;
+        my $node = $frame->result;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>resultE<gt>> element.
 
-	my $node = $frame->msg;
+        my $node = $frame->msg;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>msgE<gt>> element.
 
-	my $node = $frame->trID;
+        my $node = $frame->trID;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>trIDE<gt>> element.
 
-	my $node = $frame->clTRID;
+        my $node = $frame->clTRID;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>clTRIDE<gt>> element.
 
-	my $node = $frame->svTRID;
+        my $node = $frame->svTRID;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>svTRIDE<gt>> element.
@@ -94,7 +94,7 @@ sub svTRID   { $_[0]->getNode('svTRID') }
 
 =pod
 
-	my $msg = $frame->code;
+        my $msg = $frame->code;
 
 This method returns the code attribute of the C<E<lt>resultE<gt>>
 element.
@@ -112,7 +112,7 @@ sub code {
 
 =pod
 
-	my $msg = $frame->msg;
+        my $msg = $frame->msg;
 
 This method returns a string containing the text content of the
 C<E<lt>msgE<gt>> element.

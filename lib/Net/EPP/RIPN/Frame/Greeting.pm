@@ -42,27 +42,27 @@ sub _addExtraElements {
 
 =head1 METHODS
 
-	my $node = $frame->greeting;
+        my $node = $frame->greeting;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>greetingE<gt>> element.
 
-	my $node = $frame->svID;
+        my $node = $frame->svID;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>svIDE<gt>> element.
 
-	my $node = $frame->svDate;
+        my $node = $frame->svDate;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>svDateE<gt>> element.
 
-	my $node = $frame->svcMenu;
+        my $node = $frame->svcMenu;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>svcMenuE<gt>> element.
 
-	my $node = $frame->dcp;
+        my $node = $frame->dcp;
 
 This method returns the L<XML::LibXML::Element> object corresponding to the
 C<E<lt>dcpE<gt>> element.

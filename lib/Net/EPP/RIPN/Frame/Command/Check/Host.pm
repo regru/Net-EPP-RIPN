@@ -14,37 +14,37 @@ for host objects.
 
 =head1 SYNOPSIS
 
-	use Net::EPP::RIPN::Frame::Command::Check::Host;
-	use strict;
+        use Net::EPP::RIPN::Frame::Command::Check::Host;
+        use strict;
 
-	my $check = Net::EPP::RIPN::Frame::Command::Check::Host->new;
-	$check->addHost('example-1.tld');
-	$check->addHost('example-2.tld');
-	$check->addHost('example-2.tld');
+        my $check = Net::EPP::RIPN::Frame::Command::Check::Host->new;
+        $check->addHost('example-1.tld');
+        $check->addHost('example-2.tld');
+        $check->addHost('example-2.tld');
 
-	print $check->toString(1);
+        print $check->toString(1);
 
 This results in an XML document like this:
 
-	<?xml version="1.0" encoding="UTF-8"?>
-	<epp xmlns="urn:ietf:params:xml:ns:epp-1.0"
-	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	  xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0
-	  epp-1.0.xsd">
-	    <command>
-	      <check>
-	        <host:check
-	          xmlns:host="urn:ietf:params:xml:ns:host-1.0"
-	          xsi:schemaLocation="urn:ietf:params:xml:ns:host-1.0
-	          host-1.0.xsd">
-	            <host:name>ns0.example-1.tldE<lt>/host:name>
-	            <host:name>ns1.example-2.tldE<lt>/host:name>
-	            <host:name>ns2.example-3.tldE<lt>/host:name>
-	        </host:check>
-	      </check>
-	      <clTRID>0cf1b8f7e14547d26f03b7641660c641d9e79f45</clTRIDE<gt>
-	    </command>
-	</epp>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <epp xmlns="urn:ietf:params:xml:ns:epp-1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0
+          epp-1.0.xsd">
+            <command>
+              <check>
+                <host:check
+                  xmlns:host="urn:ietf:params:xml:ns:host-1.0"
+                  xsi:schemaLocation="urn:ietf:params:xml:ns:host-1.0
+                  host-1.0.xsd">
+                    <host:name>ns0.example-1.tldE<lt>/host:name>
+                    <host:name>ns1.example-2.tldE<lt>/host:name>
+                    <host:name>ns2.example-3.tldE<lt>/host:name>
+                </host:check>
+              </check>
+              <clTRID>0cf1b8f7e14547d26f03b7641660c641d9e79f45</clTRIDE<gt>
+            </command>
+        </epp>
 
 =head1 OBJECT HIERARCHY
 
@@ -70,7 +70,7 @@ sub new {
 
 =head1 METHODS
 
-	$frame->addHost($host_name);
+        $frame->addHost($host_name);
 
 This adds a hostname to the list of hosts to be checked.
 
